@@ -5,6 +5,7 @@ import Paragraph from '../Paragraph';
 import Div from '../Div';
 import {Grid, Col} from '../Grid';
 import { Inner } from '../Inner'
+import {TypeText} from '../TypeText';
 
 function App() {
   //  <div className="App">
@@ -15,6 +16,12 @@ function App() {
           HELLO WORLD UWU
         </Div>
       </Inner>
+
+      <TypeText TypeTag="h1" Text="Probando el titulo uwu furriemos">
+        <>
+          
+        </>
+      </TypeText>
 
         <Div>
           <div className="highlight">
