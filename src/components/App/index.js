@@ -6,6 +6,7 @@ import Div from '../Div';
 import {Grid, Col} from '../Grid';
 import { Inner } from '../Inner'
 import {TypeText} from '../TypeText';
+import {Rombo} from '../Rombo';
 
 function App() {
   //  <div className="App">
@@ -17,7 +18,9 @@ function App() {
         </Div>
       </Inner>
 
-      <TypeText TypeTag="h1" Text="Probando el titulo uwu furriemos">
+      <Rombo Color="#35BDE4" ColorAdentro="#000000" Tamanio="40"></Rombo>
+
+      <TypeText TypeTag="h1" Text="Holi Mariancita :3 <3">
         <>
           
         </>

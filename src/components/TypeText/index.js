@@ -4,6 +4,7 @@ import {TypingText } from './styled';
 const TypeText =  ({children, ...props}) => {
     const {TypeTag, Text} = props;
     const [texted, setTexted] = useState(false);
+    
     const [textWrite, addCharText] = useState(['',0]);
     useEffect(() => {
         if(textWrite[1] !== Text.length && !texted)
