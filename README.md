@@ -1,7 +1,8 @@
-install npm
+npm install
+
 npm install --save styled-components
+
 npm install framer-motion --save
-npm install --save react-hover-observer
 
 
 
