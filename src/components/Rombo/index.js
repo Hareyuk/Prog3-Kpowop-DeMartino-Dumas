@@ -8,9 +8,11 @@ const Rombo = ({ children, ...props }) => {
         Color={props.Color}
         ColorAdentro={props.ColorAdentro}
         Tamanio={props.Tamanio}
+        TamanioDentro = {props.Tamanio- 5}
+
         >
-            <div class="div-border">  
-                <div class="div-inside">
+            <div className="div-border">  
+                <div className="div-inside">
 
                 </div>
             </div>

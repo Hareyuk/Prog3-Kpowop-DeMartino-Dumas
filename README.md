@@ -1,6 +1,8 @@
 install npm
 npm install --save styled-components
 npm install framer-motion --save
+npm install --save react-hover-observer
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
