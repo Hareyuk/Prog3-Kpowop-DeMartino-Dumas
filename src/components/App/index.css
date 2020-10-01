@@ -10,6 +10,11 @@
   padding: 4em 0;
 }
 
+.Section-Subjects
+{
+  width: 100%;
+}
+
 @font-face {
   font-family: HackedFont;  
   src: url(/fonts/HACKED.ttf) format('truetype');

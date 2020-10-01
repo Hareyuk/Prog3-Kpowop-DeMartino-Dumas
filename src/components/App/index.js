@@ -8,6 +8,7 @@ import { Inner } from '../Inner'
 import {TypeText} from '../TypeText';
 import {BotonWD} from '../BotonWD';
 import {NavBar} from '../NavBar';
+import {DivNosIndividual} from '../DivNosIndividual';
 
 function App() {
   //  <div className="App">
@@ -26,6 +27,10 @@ function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
+      <div className="Section-Subjects">
+        <DivNosIndividual Subject="Sujeto #0001" Name="Marianela Dumas" PictureInsta="img/instagram_1.jpeg"></DivNosIndividual>
+        <DivNosIndividual Subject="Sujeto #0002" Name="Axel De Martino" PictureInsta="img/instagram_2.jpeg"></DivNosIndividual>
+      </div>
       <div className="App-Div">
         <img src="img/not_available.jpg" alt="logo #263"/>
 
