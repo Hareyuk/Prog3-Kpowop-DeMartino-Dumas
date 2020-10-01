@@ -18,10 +18,10 @@ const ContImgLogo = styled(motion.div)`
         {   
             position: absolute;
             font-size: 5em;
-            top: 0;
+            top: 40%;
             color: white;
             left: 50%;
-            transform: translate(-50%,85%);
+            transform: translate(-50%,-50%);
         }
 
     font-family: HackedFont;

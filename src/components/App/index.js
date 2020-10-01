@@ -10,48 +10,54 @@ import {BotonWD} from '../BotonWD';
 import {NavBar} from '../NavBar';
 import {DivNosIndividual} from '../DivNosIndividual';
 import {Logo263} from '../Logo263';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from '../../pages/Home';
+import About from '../../pages/About';
+import Error from '../../pages/Error';
+import Login from '../../pages/Login';
+import Project from '../../pages/Project';
+import SearchInfo from '../../pages/SearchInfo';
 
 function App() {
-  //  <div className="App">
-  /*Codigo copiad y pegado de TypeText/index.js */
-  const [TextBtnWD, setTextBtnWD] = useState(true);
   
-  const changeTextButton = ()=>{
-    setTextBtnWD(false)
-  };
-
-  const changeToInitial = ()=>
-  {
-    setTextBtnWD(true)
-  }
   
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <div className="Section-Subjects">
-        <DivNosIndividual Subject="Sujeto #0001" Name="Marianela Dumas" PictureInsta="img/instagram_1.jpeg"></DivNosIndividual>
-        <DivNosIndividual Subject="Sujeto #0002" Name="Axel De Martino" PictureInsta="img/instagram_2.jpeg"></DivNosIndividual>
-      </div>
-      <div className="App-Div">
-        <Logo263></Logo263>
 
-        <TypeText FFont="HackedFont" TypeTag="h1" TextOriginal="Estas dispuesto a entrar?"><>
-            
-            </>
-        </TypeText>
-        <div className="Cont-Btns">
-          <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
-              SÍ
-          </BotonWD>
-          <BotonWD  FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" eventHoverOut={changeToInitial} eventHover={changeTextButton}>
-            {TextBtnWD === true ? "NO" :  <TypeText TypeTag="" TextOriginal="SÍ"><></></TypeText>}
-          </BotonWD>
-        </div>
-
-        <h2 className="Hacked-font">Abandona toda esperanza todo aquel que entre aqui</h2>
-      </div>
-    </div>
+    <Router>
+    <Switch>
+        <Route path="/About/">
+          <About />
+        </Route>
+        <Route path="/Error/">
+          <Error />
+        </Route>
+        <Route path="/Login/">
+          <Login />
+        </Route>
+        <Route path="/Project/">
+          <Project />
+        </Route>
+        <Route  path="/SearchInfo/:id">
+          <SearchInfo />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+  </Router>
+        
   );
 }
 
 export default App;
+
+/* <NavBar></NavBar>
+      <div className="Section-Subjects">
+        <DivNosIndividual Subject="Sujeto #0001" Name="Marianela Dumas" PictureInsta="img/instagram_1.jpeg"></DivNosIndividual>
+        <DivNosIndividual Subject="Sujeto #0002" Name="Axel De Martino" PictureInsta="img/instagram_2.jpeg"></DivNosIndividual>
+      </div> */
