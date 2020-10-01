@@ -7,7 +7,7 @@ import {Grid, Col} from '../Grid';
 import { Inner } from '../Inner'
 import {TypeText} from '../TypeText';
 import {BotonWD} from '../BotonWD';
-
+import {NavBar} from '../NavBar';
 
 function App() {
   //  <div className="App">
@@ -25,6 +25,7 @@ function App() {
   
   return (
     <div className="App">
+      <NavBar></NavBar>
       <div className="App-Div">
         <img src="img/not_available.jpg" alt="logo #263"/>
 
