@@ -9,6 +9,7 @@ import {TypeText} from '../TypeText';
 import {BotonWD} from '../BotonWD';
 import {NavBar} from '../NavBar';
 import {DivNosIndividual} from '../DivNosIndividual';
+import {Logo263} from '../Logo263';
 
 function App() {
   //  <div className="App">
@@ -32,7 +33,7 @@ function App() {
         <DivNosIndividual Subject="Sujeto #0002" Name="Axel De Martino" PictureInsta="img/instagram_2.jpeg"></DivNosIndividual>
       </div>
       <div className="App-Div">
-        <img src="img/not_available.jpg" alt="logo #263"/>
+        <Logo263></Logo263>
 
         <TypeText FFont="HackedFont" TypeTag="h1" TextOriginal="Estas dispuesto a entrar?"><>
             
