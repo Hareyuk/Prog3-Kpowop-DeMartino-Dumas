@@ -3,7 +3,7 @@ import Layout from '../containers/Layout';
 import {Logo263} from '../components/Logo263';
 import {TypeText} from '../components/TypeText';
 import {BotonWD} from '../components/BotonWD';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Intro = () => 
 {
