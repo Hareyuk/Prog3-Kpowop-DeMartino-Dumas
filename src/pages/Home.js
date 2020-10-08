@@ -19,17 +19,20 @@ const Home = () =>
     return (
         <div className="App">
             <Layout>
-                <div>
-                        <Logo263></Logo263>
+                    <div>
+                        
+                        <NavBar>
+                        </NavBar>
+                        
+                    </div>
+                    <div>
+                    <Logo263></Logo263>
                        
                         <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
                             LOGIN
                         </BotonWD>
-                        <NavBar>
-
-                        </NavBar>
                         <h2 className="Forgotten Futurist">Este proyecto fue creado por alumnos de la Universidad Maimónides para dominar al mundo</h2>
-                    </div>
+                        </div>
             </Layout>
         </div>
     )
