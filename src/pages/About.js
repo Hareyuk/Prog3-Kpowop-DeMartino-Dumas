@@ -18,9 +18,6 @@ const Home = () =>
                         
                     
                    
-                    <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
-                            LOGIN
-                    </BotonWD>
                         
                     <Logo263></Logo263>
                        
