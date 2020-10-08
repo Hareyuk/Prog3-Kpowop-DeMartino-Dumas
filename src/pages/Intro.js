@@ -33,7 +33,8 @@ const Intro = () =>
                             SÍ
                         </Link>
                         </BotonWD>
-                        <BotonWD  FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" eventHoverOut={changeToInitial} eventHover={changeTextButton}><Link to="/Principal/">
+                        <BotonWD WidthPx="190px" HeightPx="104px" FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" eventHoverOut={changeToInitial} eventHover={changeTextButton}>
+                        <Link to="/Principal/">
                        
                             {TextBtnWD === true ? "NO" :  <TypeText TypeTag="" TextOriginal="SÍ"><></></TypeText>}
                             

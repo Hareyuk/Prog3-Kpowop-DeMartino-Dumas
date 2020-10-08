@@ -1,8 +1,13 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion' 
-
+const WidthPx = props=> props.WidthPx;
+const HeightPx = props=> props.HeightPx;
 const ContBtnWD = styled(motion.button)`
-
+width: ${WidthPx !== undefined ? WidthPx : 'unset'};
+height: ${HeightPx !== undefined ? HeightPx : 'unset'};
+text-align: left;
+cursor: pointer;
+${props=> props.primary ? '#aa1144' : 'darkmagent'}
 @font-face {
     font-family: Forgotten Futurist;  
     font-weight: 700;
@@ -25,6 +30,11 @@ const ContBtnWD = styled(motion.button)`
         vertical-align: middle;
         font-family: Forgotten Futurist;
         font-weight: 700;
+        a
+        {
+            color: white;
+            text-decoration: none;
+        }
     }
     `;
 
