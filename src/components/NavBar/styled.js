@@ -6,6 +6,7 @@ const StyledNavBar = styled(motion.div)`
     position: fixed;
     top: 10%;
     left: 0;
+    z-index: 1000;
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
     transform-origin: top left;
