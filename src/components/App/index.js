@@ -23,6 +23,7 @@ import Login from '../../pages/Login';
 import Project from '../../pages/Project';
 import SearchInfo from '../../pages/SearchInfo';
 import Home from '../../pages/Home';
+import Dashboard from '../../pages/Dashboard';
 
 function App() {
   
@@ -48,6 +49,9 @@ function App() {
         </Route>
         <Route  path="/SearchInfo/:id">
           <SearchInfo />
+        </Route>
+        <Route  path="/Dashboard/">
+          <Dashboard />
         </Route>
         <Route path="/">
           <Intro />

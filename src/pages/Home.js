@@ -15,8 +15,8 @@ const Home = () =>
                         <NavBar>
                         </NavBar>
                         
-                    </div>
-                    <div>
+                    
+                   
                     <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
                             LOGIN
                         </BotonWD>
