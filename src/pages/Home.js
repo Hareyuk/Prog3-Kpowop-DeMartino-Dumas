@@ -17,12 +17,13 @@ const Home = () =>
                         
                     </div>
                     <div>
-                    <Logo263></Logo263>
-                       
-                        <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
+                    <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
                             LOGIN
                         </BotonWD>
-                        <TitleH2 FontS="1.3em" FontF="Forgotten Futurist" Color="white">Este proyecto fue creado por alumnos de la Universidad Maimónides para dominar al mundo
+                        
+                    <Logo263></Logo263>
+                       
+                    <TitleH2 FontS="1.3em" FontF="Forgotten Futurist" Color="white">Este proyecto fue creado por alumnos de la Universidad Maimónides para dominar al mundo
                         </TitleH2>
                     </div>
             </Layout>
