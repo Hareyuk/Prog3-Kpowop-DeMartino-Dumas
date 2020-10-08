@@ -16,12 +16,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home from '../../pages/Home';
+import Intro from '../../pages/Intro';
 import About from '../../pages/About';
 import Error from '../../pages/Error';
 import Login from '../../pages/Login';
 import Project from '../../pages/Project';
 import SearchInfo from '../../pages/SearchInfo';
+import Home from '../../pages/Home';
 
 function App() {
   
@@ -30,6 +31,9 @@ function App() {
 
     <Router>
     <Switch>
+        <Route path="/Principal/">
+          <Home />
+        </Route>
         <Route path="/About/">
           <About />
         </Route>
@@ -46,7 +50,7 @@ function App() {
           <SearchInfo />
         </Route>
         <Route path="/">
-          <Home />
+          <Intro />
         </Route>
       </Switch>
   </Router>
