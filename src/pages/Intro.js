@@ -3,9 +3,9 @@ import Layout from '../containers/Layout';
 import {Logo263} from '../components/Logo263';
 import {TypeText} from '../components/TypeText';
 import {BotonWD} from '../components/BotonWD';
-import App from '../components/App';
+import { Link } from 'react-router-dom'
 
-const Home = () => 
+const Intro = () => 
 {
     const [TextBtnWD, setTextBtnWD] = useState(true);
   
@@ -19,6 +19,7 @@ const Home = () =>
   }
     return (
         <div className="App">
+            
             <Layout>
                 <div>
                         <Logo263></Logo263>
@@ -28,11 +29,15 @@ const Home = () =>
                             </>
                         </TypeText>
                         <div className="Cont-Btns">
-                        <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
+                        <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55"><Link to="/Principal/">
                             SÍ
+                        </Link>
                         </BotonWD>
-                        <BotonWD  FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" eventHoverOut={changeToInitial} eventHover={changeTextButton}>
+                        <BotonWD  FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" eventHoverOut={changeToInitial} eventHover={changeTextButton}><Link to="/Principal/">
+                       
                             {TextBtnWD === true ? "NO" :  <TypeText TypeTag="" TextOriginal="SÍ"><></></TypeText>}
+                            
+                        </Link>
                         </BotonWD>
                         </div>
 
@@ -43,4 +48,4 @@ const Home = () =>
     )
 }
 
-export default Home;
+export default Intro;
