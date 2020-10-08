@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const StyledNavBar = styled(motion.div)`
 
     position: fixed;
-    top: 40%;
+    top: 10%;
     left: 0;
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
@@ -12,6 +12,12 @@ const StyledNavBar = styled(motion.div)`
     -webkit-transform: rotate(90deg) translate(-50%,-100%);
     -ms-transform: rotate(90deg) translate(-50%,-100%);
     transform: rotate(90deg) translate(0%,-100%);
+    
+    a
+    {
+        color: white;
+        text-decoration: none;
+    }
 }
     `;
 
