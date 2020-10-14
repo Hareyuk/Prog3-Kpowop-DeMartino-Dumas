@@ -19,7 +19,6 @@ const StyledNavBar = styled(motion.div)`
         color: white;
         text-decoration: none;
     }
-}
     `;
 
 export {StyledNavBar};
