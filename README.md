@@ -6,6 +6,10 @@ npm install framer-motion --save
 
 npm install --save react-router-dom
 
+npm install @auth0/auth0-react
+
+npm install axios
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

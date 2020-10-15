@@ -25,7 +25,18 @@ const ContImgLogo = styled(motion.div)`
         }
 
     font-family: HackedFont;
-}
+
+        ${props=>props.ToSide && `
+        opacity: 0.5;
+        top: 0;
+        right: 0;
+        position: fixed;
+        img
+        {
+            width: 100%;
+        }
+        width: 500px;
+        `}
     `;
 
 export {ContImgLogo};
