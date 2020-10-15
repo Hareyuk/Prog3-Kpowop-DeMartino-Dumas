@@ -26,7 +26,7 @@ const Home = () =>
                         
                     <Logo263 ToSide={true}></Logo263>
                        
-                    <div className="Section-Subjects">
+                    <div className="Section-Subjects" style={{top:7+"em"}}>
                         <DivNosIndividual Subject="Sujeto #0001" Name="Axel Dumas" PictureInsta="../img/instagram_1.jpeg"/>
                         <DivNosIndividual Subject="Sujeto #0002" Name="Marianela De Martino" PictureInsta="../img/instagram_2.jpeg"/>
                     </div>
