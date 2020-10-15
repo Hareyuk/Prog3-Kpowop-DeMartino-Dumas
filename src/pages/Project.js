@@ -4,7 +4,7 @@ import {Logo263} from '../components/Logo263';
 import {DivInfoProject} from '../components/DivInfoProject';
 import {NavBar} from "../components/NavBar";
 import SearchBar from "../components/SearchBar";
-import ContProject from '../components/ContProject';
+import ContNintyWidth from '../components/ContNintyWidth';
 import LoginButton from "../components/LoginButton";
 import LogoutButton from "../components/LogoutButton";
 import axios from 'axios';
@@ -40,7 +40,7 @@ const Project = () =>
         <div className="App">
             <Layout>
                     <Logo263 ToSide={true}></Logo263>
-                    <ContProject>
+                    <ContNintyWidth>
                         <NavBar/>
                             <LoginButton/>
                             <LogoutButton/>
@@ -50,7 +50,7 @@ const Project = () =>
                                 {!loading ? resultsGames.length !== 0 ? resultsGames.map((obj)=>
                                     <DivInfoProject DataGame={obj}> </DivInfoProject>) : 'no hay resultados de tu búsqueda' : `Cargando`}
                             </div>
-                    </ContProject>
+                    </ContNintyWidth>
             </Layout>
         </div>
     )

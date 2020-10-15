@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion' 
 
-const StyledContProject = styled(motion.div)`
+const StyledContNintyWidth = styled(motion.div)`
     display:flex;
     flex-wrap: wrap;
     width: 90%;
@@ -16,7 +16,7 @@ const StyledContProject = styled(motion.div)`
     }
     `;
 
-export default StyledContProject;
+export default StyledContNintyWidth;
 
 /* puedo meter esto tambien sino despues de margin-left y antes del `
     ${props => props.primary && css `color: white; backgorund: black; `};

@@ -4,7 +4,7 @@ import ContRombo from './styled'
 const Rombo = ({ children, ...props }) => {
 
     return (
-        <ContRombo 
+        <ContRombo className="class-rombo-personalized"
         Color={props.Color}
         ColorAdentro={props.ColorAdentro}
         Tamanio={props.Tamanio}

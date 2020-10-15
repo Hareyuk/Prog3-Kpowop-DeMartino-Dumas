@@ -9,7 +9,7 @@ const NavBar = ({ children, ...props }) => {
             <NavBarButton Color="#E31075" ColorAdentro="rgba(227,16,117, 0.45)"><Link to="/Principal/">
                 Home
             </Link></NavBarButton>
-            <NavBarButton Color="#35BDE4" ColorAdentro="rgba(53,189,228, 0.45)"><Link to="/Project/">
+            <NavBarButton Color="#35BDE4" ColorAdentro="rgba(53,189,228, 0.45)"><Link to="/Project/pokemon">
                 Proyecto
             </Link></NavBarButton>
             <NavBarButton Color="#10E3A2" ColorAdentro="rgba(16,227,162, 0.45)"><Link to="/About/">

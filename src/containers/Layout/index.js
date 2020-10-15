@@ -3,7 +3,7 @@ import React from 'react';
 const Layout = ({children}) => 
 {
     return(
-        <div className="App">
+        <div className="App" style={{zIndex: "10"}}>
                 {children}
             </div>
         )

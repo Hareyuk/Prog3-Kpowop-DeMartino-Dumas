@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const WidthPx = props=> props.WidthPx;
 const HeightPx = props=> props.HeightPx;
 
-const StyledLoginButton = styled(motion.button)`
+const StyledLogOutButton = styled(motion.button)`
     width: ${WidthPx !== undefined ? WidthPx : 'unset'};
     height: ${HeightPx !== undefined ? HeightPx : 'unset'};
     text-align: left;
@@ -15,7 +15,6 @@ const StyledLoginButton = styled(motion.button)`
         src: url(fonts/forgotten_futurist_bd.ttf) format('truetype');
         }
 
-        z-index: 20;
         background-color: #181E35;
         color: #fff;
         padding: 0.3em 0.7em;
@@ -23,6 +22,7 @@ const StyledLoginButton = styled(motion.button)`
         font-size: 1.8em;
         font-family: Forgotten Futurist;
         font-weight: 700;
+        z-index: 20;
         div
         {
             vertical-align: middle;
@@ -42,4 +42,4 @@ const StyledLoginButton = styled(motion.button)`
         top: 2em
     `;
 
-export default StyledLoginButton;
+export default StyledLogOutButton;
