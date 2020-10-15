@@ -3,6 +3,8 @@ import Layout from '../containers/Layout';
 import {Logo263} from '../components/Logo263';
 import {DivInfoDash} from '../components/DivInfoDash';
 import {NavBar} from "../components/NavBar";
+import LoginButton from "../components/LoginButton";
+import LogoutButton from "../components/LogoutButton"
 
 
 const Project = () => 
@@ -12,6 +14,8 @@ const Project = () =>
             <Layout>
                     <div>
                         <NavBar/>
+                        <LoginButton/>
+                        <LogoutButton/>
                         <h1 style={{color: 'white', margin: 0}} >Proyecto</h1>
                         <Logo263></Logo263>
                         <DivInfoDash>

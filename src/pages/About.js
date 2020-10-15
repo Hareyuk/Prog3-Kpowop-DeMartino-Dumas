@@ -5,6 +5,8 @@ import {BotonWD} from '../components/BotonWD';
 import {NavBar} from "../components/NavBar";
 import {TitleH2} from '../components/TitleH2';
 import {DivNosIndividual} from '../components/DivNosIndividual'
+import LoginButton from "../components/LoginButton";
+import LogoutButton from "../components/LogoutButton"
 
 const Home = () => 
 {
@@ -15,6 +17,9 @@ const Home = () =>
                         
                         <NavBar>
                         </NavBar>
+
+                        <LoginButton/>
+                        <LogoutButton/>
                         
                     
                    

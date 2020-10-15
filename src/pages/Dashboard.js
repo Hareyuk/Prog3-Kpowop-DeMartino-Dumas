@@ -3,7 +3,9 @@ import Layout from '../containers/Layout';
 import {Logo263} from '../components/Logo263';
 import {DivInfoDash} from '../components/DivInfoDash';
 import {NavBar} from "../components/NavBar";
-
+import Profile from "../components/Profile";
+import LoginButton from "../components/LoginButton";
+import LogoutButton from "../components/LogoutButton"
 
 const Dashboard = () => 
 {
@@ -12,13 +14,18 @@ const Dashboard = () =>
             <Layout>
                     <div>
                         <NavBar/>
+                        <LoginButton/>
+                        <LogoutButton/>
                         <h1 style={{color: 'white', margin: 0}} >Dashboard</h1>
                         <Logo263></Logo263>
                         <div>
-                        <DivInfoDash>
+                        {/* <DivInfoDash>
                             <h3>Sujeto #0003</h3>
                             <h4>Nombre: Utena Tenjou</h4>
                             <img src="/img/instagram_1.jpeg" alt="QR Code"/>
+                        </DivInfoDash> */}
+                        <DivInfoDash>
+                            <Profile/>
                         </DivInfoDash>
                         </div>
                         <div>
