@@ -23,9 +23,9 @@ const Project = () =>
             try{
                 setLoading(true);
                 const response = await axios.get(`https://api.rawg.io/api/games?search=${query}`);
-                console.log(query);
+                const data = response.data.results;
                 //const data= response.data.slice(0,30);
-                setResultsGames(response);
+                setResultsGames(data);
                 setLoading(false);
             }
             catch(error)
@@ -33,7 +33,7 @@ const Project = () =>
                 console.error('Mi error :C  : ', error);
             }
         }
-        fetchData();
+        (query !== "") && fetchData();
     },[]);
     
     return (
@@ -47,7 +47,8 @@ const Project = () =>
                             <h1 style={{color: 'white', margin: 0}} >Proyecto</h1>
                             <SearchBar/>
                             <div className="divsInfo">
-                                {console.log(resultsGames)}
+                                {!loading ? resultsGames.length !== 0 ? resultsGames.map((obj)=>
+                                    <DivInfoProject DataGame={obj}> </DivInfoProject>) : 'no hay resultados de tu búsqueda' : `Cargando`}
                             </div>
                     </ContProject>
             </Layout>
