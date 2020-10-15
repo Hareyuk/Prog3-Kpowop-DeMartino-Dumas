@@ -17,7 +17,7 @@ const Search = (props) => {
         {
             try{
                 setLoading(true);
-                const response = await axios.get(`https://api.rawg.io/api/games?search={query}`);
+                const response = await axios.get(`https://api.rawg.io/api/games?search=${query}`);
                 //const data= response.data.slice(0,30);
                 setNews(response);
                 setLoading(false);
