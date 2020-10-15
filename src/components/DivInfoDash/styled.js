@@ -11,6 +11,7 @@ const ContInfoDash = styled(motion.div)`
     padding: 1em 2em;
     border-radius: 0 2em 0 0;
     margin: 1em 3em;
+    
 
     *
     {
