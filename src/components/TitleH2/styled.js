@@ -1,6 +1,5 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion' 
-
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 const ContTitleH2 = styled(motion.h2)`
     @font-face {
         font-family: Forgotten Futurist;  
