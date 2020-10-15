@@ -12,19 +12,20 @@ import { useParams } from 'react-router-dom';
 
 const Project = () => 
 {    
-    const [news, setNews] = useState([]);
+    const [resultsGames, setResultsGames] = useState([]);
     const [loading, setLoading] = useState(true);
     let { query } = useParams();
 
-    useEffect(() =>
+    useEffect( () =>
     {
         const fetchData=async() => 
         {
             try{
                 setLoading(true);
                 const response = await axios.get(`https://api.rawg.io/api/games?search=${query}`);
+                console.log(query);
                 //const data= response.data.slice(0,30);
-                setNews(response);
+                setResultsGames(response);
                 setLoading(false);
             }
             catch(error)
@@ -46,38 +47,7 @@ const Project = () =>
                             <h1 style={{color: 'white', margin: 0}} >Proyecto</h1>
                             <SearchBar/>
                             <div className="divsInfo">
-                                <DivInfoProject>
-                                    <h3>Super Smash Bros Ultimate</h3>
-                                    <div className="Box-Texts">
-                                        <h4>Género: Lucha 2D</h4>
-                                        <h4>Creador: Mashihiro Sakurai</h4>
-                                        <h4>Plataforma: Nintendo Switch</h4>
-                                    </div>
-                                </DivInfoProject>
-                                <DivInfoProject>
-                                    <h3>Super Smash Bros Ultimate</h3>
-                                    <div className="Box-Texts">
-                                        <h4>Género: Lucha 2D</h4>
-                                        <h4>Creador: Mashihiro Sakurai</h4>
-                                        <h4>Plataforma: Nintendo Switch</h4>
-                                    </div>
-                                </DivInfoProject>
-                                <DivInfoProject>
-                                    <h3>Super Smash Bros Ultimate</h3>
-                                    <div className="Box-Texts">
-                                        <h4>Género: Lucha 2D</h4>
-                                        <h4>Creador: Mashihiro Sakurai</h4>
-                                        <h4>Plataforma: Nintendo Switch</h4>
-                                    </div>
-                                </DivInfoProject>
-                                <DivInfoProject>
-                                    <h3>Shoujo Kakumei Utena: Itsuka Kakumei Sareru Monogatari</h3>
-                                    <div className="Box-Texts">
-                                        <h4>Género: Visual Novel</h4>
-                                        <h4>Creador: Kunihiko Ikuhara</h4>
-                                        <h4>Plataforma: Sega Saturn</h4>
-                                    </div>
-                                </DivInfoProject>
+                                {console.log(resultsGames)}
                             </div>
                     </ContProject>
             </Layout>

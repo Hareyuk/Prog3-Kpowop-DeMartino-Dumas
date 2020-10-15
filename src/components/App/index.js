@@ -44,10 +44,10 @@ function App() {
         <Route path="/Login/">
           <Login />
         </Route>
-        <Route path="/Project/">
+        <Route path="/Project/:query">
           <Project />
         </Route>
-        <Route  path="/SearchInfo/:id">
+        <Route  path="/SearchInfo/">
           <SearchInfo />
         </Route>
         <Route  path="/Dashboard/">
