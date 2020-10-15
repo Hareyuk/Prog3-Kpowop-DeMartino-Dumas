@@ -46,14 +46,7 @@ const Dashboard = () =>
                                 <h4>Plataforma: Sega Saturn</h4>
                             </div>
                         </DivInfoDash>
-                        <DivInfoDash>
-                            <h3>Shoujo Kakumei Utena: Itsuka Kakumei Sareru Monogatari</h3>
-                            <div className="Box-Texts">
-                                <h4>Género: Visual Novel</h4>
-                                <h4>Creador: Kunihiko Ikuhara</h4>
-                                <h4>Plataforma: Sega Saturn</h4>
-                            </div>
-                        </DivInfoDash>
+                        
                         </div>
                     </div>
             </Layout>
