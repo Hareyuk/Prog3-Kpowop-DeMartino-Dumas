@@ -24,7 +24,7 @@ const Home = () =>
                     
                    
                         
-                    <Logo263></Logo263>
+                    <Logo263 ToSide={true}></Logo263>
                        
                     <div className="Section-Subjects">
                         <DivNosIndividual Subject="Sujeto #0001" Name="Axel Dumas" PictureInsta="../img/instagram_1.jpeg"/>

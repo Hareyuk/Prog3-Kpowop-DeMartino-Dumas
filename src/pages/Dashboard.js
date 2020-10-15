@@ -17,7 +17,7 @@ const Dashboard = () =>
                         <LoginButton/>
                         <LogoutButton/>
                         <h1 style={{color: 'white', margin: 0}} >Dashboard</h1>
-                        <Logo263></Logo263>
+                        <Logo263 ToSide={true}></Logo263>
                         <div>
                         {/* <DivInfoDash>
                             <h3>Sujeto #0003</h3>
