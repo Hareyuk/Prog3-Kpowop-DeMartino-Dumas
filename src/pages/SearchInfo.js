@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import Layout from '../containers/Layout';
-import FullWidthGrid from '../components/FullWidthGrid';
-import GridSkeleton from '../components/GridSkeleton';
 import axios from 'axios';
 //import { Grid } from '@material-ui/core';
 
@@ -21,7 +19,7 @@ const Search = (props) => {
                 setLoading(true);
                 const response = await axios.get(`https://api.rawg.io/api/games?search={query}`);
                 //const data= response.data.slice(0,30);
-                setNews(data);
+                setNews(response);
                 setLoading(false);
             }
             catch(error)
@@ -34,7 +32,7 @@ const Search = (props) => {
     
     return(
         <Layout loading={loading}>
-            {!loading ? news.length !== 0 ? <FullWidthGrid data={news} /> : 'no hay noticias para tu busqueda' : <GridSkeleton />}
+            {/* {!loading ? news.length !== 0 ? <FullWidthGrid data={news} /> : 'no hay noticias para tu busqueda' : <GridSkeleton />} */}
         </Layout>
     );
 };
