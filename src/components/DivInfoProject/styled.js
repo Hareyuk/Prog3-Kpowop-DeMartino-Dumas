@@ -9,12 +9,17 @@ const ContInfoProj = styled(motion.div)`
     }
     font-family: "Forgotten Futurist";
     width: 45%;
-    display: inline-block;
+    display: flex;
+    flex-wrap:wrap;
     color: white;
     background-color: #181E35;
     padding: 1em 2em;
     margin: 1em auto;
 
+    h3
+    {
+        width: 100%;
+    }
     *
     {
         text-align: left;
@@ -22,18 +27,30 @@ const ContInfoProj = styled(motion.div)`
     
     .Box-Texts
     {
+        width: 45%;
         display: flex;
         flex-wrap: wrap;
 
         h4
         {
-            width: 50%;
+            width: 45%;
         }
+    }
+
+    .Box-Image
+    {
+        width: 45%;
+        text-align: center;
     }
 
     img
     {
         width: 50%;
+    }
+
+    .Box-Image img
+    {
+        width: 100%;
     }
     `;
 
