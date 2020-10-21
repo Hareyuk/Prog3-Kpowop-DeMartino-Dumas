@@ -28,7 +28,7 @@ const NavBar = ({ children, ...props }) => {
             </Link>
             <Link to="/Dashboard/">
                 <NavBarButton Color="#35BDE4" ColorAdentro="rgba(53,189,228, 0.45)">
-                    Dashboard
+                    Componentes
                 </NavBarButton>
             </Link>
         </StyledNavBar>

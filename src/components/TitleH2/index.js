@@ -8,6 +8,7 @@ const TitleH2 = ({ children, ...props }) => {
         Color={props.Color}
         FontF={props.FontF}
         FontS={props.FontS}
+        CenterText={props.CenterText}
         >
             {children}
         </ContTitleH2>

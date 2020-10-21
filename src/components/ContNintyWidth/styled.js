@@ -7,12 +7,21 @@ const StyledContNintyWidth = styled(motion.div)`
     width: 90%;
     margin: 0 auto;
     justify-content:space-between; 
+    position:relative;
 
     .divsInfo
     {
         display: flex;
         flex-wrap: wrap;
         justify-content:space-between; 
+    }
+
+    .LoadingGif
+    {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     `;
 

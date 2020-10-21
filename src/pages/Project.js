@@ -49,7 +49,7 @@ const Project = () =>
                             <SearchBar/>
                             <div className="divsInfo">
                                 {!loading ? resultsGames.length !== 0 ? resultsGames.map((obj)=>
-                                    <DivInfoProject DataGame={obj}> </DivInfoProject>) : 'no hay resultados de tu búsqueda' : `Cargando`}
+                                    <DivInfoProject DataGame={obj}> </DivInfoProject>) : 'no hay resultados de tu búsqueda' : <img className="LoadingGif" src="/img/loading.gif" alt="loading"/>}
                             </div>
                     </ContNintyWidth>
             </Layout>

@@ -20,7 +20,7 @@ const Home = () =>
                         <LogoutButton/>
                     <Logo263></Logo263>
                     <ContNintyWidth>
-                        <TitleH2 style={{width: "90%"}} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
+                        <TitleH2 FontS="1.8em" FontF="Forgotten Futurist" Color="white" CenterText="true">
                             El proyecto #263 fue realizado por dos alumnos de la Universidad Maimónides con el fin de conquistar a la humanidad
                         </TitleH2>
                     </ContNintyWidth>
