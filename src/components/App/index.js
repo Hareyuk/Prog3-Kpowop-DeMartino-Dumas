@@ -23,6 +23,7 @@ import Project from '../../pages/Project';
 import SearchInfo from '../../pages/SearchInfo';
 import Home from '../../pages/Home';
 import Dashboard from '../../pages/Dashboard';
+import Componentes from '../../pages/Componentes';
 import NotFoundPage  from '../../pages/404';
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
         </Route>
         <Route  exact path="/Dashboard/">
           <Dashboard />
+        </Route>
+        <Route  exact path="/Componentes/">
+          <Componentes />
         </Route>
         <Route exact path="/">
           <Intro />
