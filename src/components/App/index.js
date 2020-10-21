@@ -18,12 +18,12 @@ import {
 } from "react-router-dom";
 import Intro from '../../pages/Intro';
 import About from '../../pages/About';
-import Error from '../../pages/Error';
 import Login from '../../pages/Login';
 import Project from '../../pages/Project';
 import SearchInfo from '../../pages/SearchInfo';
 import Home from '../../pages/Home';
 import Dashboard from '../../pages/Dashboard';
+import NotFoundPage  from '../../pages/404';
 
 function App() {
   
@@ -32,29 +32,29 @@ function App() {
 
     <Router>
     <Switch>
-        <Route path="/Principal/">
+        <Route exact path="/Principal/">
           <Home />
         </Route>
-        <Route path="/About/">
+        <Route exact path="/About/">
           <About />
         </Route>
-        <Route path="/Error/">
-          <Error />
-        </Route>
-        <Route path="/Login/">
+        <Route exact path="/Login/">
           <Login />
         </Route>
-          <Route path="/Project/:query">
+          <Route exact path="/Project/:query">
           <Project />
         </Route>
-        <Route  path="/SearchInfo/">
+        <Route  exact path="/SearchInfo/">
           <SearchInfo />
         </Route>
-        <Route  path="/Dashboard/">
+        <Route  exact path="/Dashboard/">
           <Dashboard />
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Intro />
+        </Route>
+        <Route path="">
+          <NotFoundPage />
         </Route>
       </Switch>
   </Router>
