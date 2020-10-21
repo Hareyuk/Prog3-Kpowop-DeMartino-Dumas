@@ -22,6 +22,10 @@ const ContNosIndividual = styled(motion.div)`
     {
         width: 50%;
     }
+    :hover
+    {
+        box-shadow: 3px 3px 10px #10e3a2;
+    }
     `;
 
 export {ContNosIndividual};

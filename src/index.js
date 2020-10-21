@@ -9,7 +9,7 @@ ReactDOM.render(
   <Auth0Provider
     domain="dev-76yek2cr.us.auth0.com"
     clientId="CtfzatrkgfJ24KTmMA91RkZsQcCPOO9D"
-    redirectUri="http://localhost:3000/Principal/"
+    redirectUri={window.location.origin}
   >
     <App />
   </Auth0Provider>,
