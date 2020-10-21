@@ -13,7 +13,11 @@ const ContErrorComp = styled(motion.div)`
     
     .contError
     {
-        
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
     }
     `;
 
