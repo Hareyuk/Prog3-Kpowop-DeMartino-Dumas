@@ -6,18 +6,31 @@ import { Link } from 'react-router-dom';
 const NavBar = ({ children, ...props }) => {
     return (
         <StyledNavBar>
-            <NavBarButton Color="#E31075" ColorAdentro="rgba(227,16,117, 0.45)"><Link to="/Principal/">
-                Home
-            </Link></NavBarButton>
-            <NavBarButton Color="#35BDE4" ColorAdentro="rgba(53,189,228, 0.45)"><Link to="/Project/pokemon">
-                Proyecto
-            </Link></NavBarButton>
-            <NavBarButton Color="#10E3A2" ColorAdentro="rgba(16,227,162, 0.45)"><Link to="/About/">
-                Nosotros
-            </Link></NavBarButton>
-            <NavBarButton Color="#E31075" ColorAdentro="rgba(227,16,117, 0.45)"><Link to="/Dashboard/">
-                Dashboard
-            </Link></NavBarButton>
+            <Link to="/Principal/">
+                <NavBarButton Color="#E31075" ColorAdentro="rgba(227,16,117, 0.45)">
+                    Home
+                </NavBarButton>
+            </Link>
+            <Link to="/Project/pokemon">
+                <NavBarButton Color="#35BDE4" ColorAdentro="rgba(53,189,228, 0.45)">
+                    Proyecto
+                </NavBarButton>
+            </Link>
+            <Link to="/About/">
+                <NavBarButton Color="#10E3A2" ColorAdentro="rgba(16,227,162, 0.45)">
+                    Nosotros
+                </NavBarButton>
+            </Link>
+            <Link to="/Dashboard/">
+                <NavBarButton Color="#E31075" ColorAdentro="rgba(227,16,117, 0.45)">
+                    Dashboard
+                </NavBarButton>
+            </Link>
+            <Link to="/Dashboard/">
+                <NavBarButton Color="#35BDE4" ColorAdentro="rgba(53,189,228, 0.45)">
+                    Dashboard
+                </NavBarButton>
+            </Link>
         </StyledNavBar>
     )
 }

@@ -29,15 +29,16 @@ const Intro = () =>
                             </>
                         </TypeText>
                         <div className="Cont-Btns">
-                        <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55"><Link to="/Principal/">
-                            SÍ
-                        </Link>
-                        </BotonWD>
-                        <BotonWD WidthPx="190px" HeightPx="104px" FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" EventHoverOut={changeToInitial} EventHover={changeTextButton}>
                         <Link to="/Principal/">
-                            {TextBtnWD === true ? "NO" :  <TypeText TypeTag="" TextOriginal="SÍ"><></></TypeText>}
+                            <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
+                                SÍ
+                            </BotonWD>
                         </Link>
-                        </BotonWD>
+                        <Link to="/Principal/">
+                            <BotonWD WidthPx="190px" HeightPx="104px" FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" EventHoverOut={changeToInitial} EventHover={changeTextButton}>
+                                {TextBtnWD === true ? "NO" :  <TypeText TypeTag="" TextOriginal="SÍ"><></></TypeText>}
+                            </BotonWD>
+                        </Link>
                         </div>
 
                         <h2 className="Hacked-font">Abandona toda esperanza todo aquel que entre aqui</h2>
