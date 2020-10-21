@@ -8,13 +8,14 @@ const ContInfoProj = styled(motion.div)`
         src: url(fonts/forgotten_futurist_bd.ttf) format('truetype');
     }
     font-family: "Forgotten Futurist";
-    width: 45%;
+    width: 42%;
     display: flex;
     flex-wrap:wrap;
     color: white;
     background-color: #181E35;
     padding: 1em 2em;
     margin: 1em auto;
+    z-index: 10;
 
     h3
     {
@@ -51,6 +52,14 @@ const ContInfoProj = styled(motion.div)`
     .Box-Image img
     {
         width: 100%;
+    }
+
+    @media only screen and (max-width: 768px)
+    {
+        .Box-Image
+        {
+            width: 100%;
+        }
     }
     `;
 

@@ -1,17 +1,17 @@
 import React from 'react'
-import ContTitleH2 from './styled'
+import ContTitleH1 from './styled'
 
-const TitleH2 = ({ children, ...props }) => {
+const TitleH1 = ({ children, ...props }) => {
 
     return (
-        <ContTitleH2 
+        <ContTitleH1 
         Color={props.Color}
         FontF={props.FontF}
         FontS={props.FontS}
         >
             {children}
-        </ContTitleH2>
+        </ContTitleH1>
     )
 }
 
-export {TitleH2};
+export {TitleH1};

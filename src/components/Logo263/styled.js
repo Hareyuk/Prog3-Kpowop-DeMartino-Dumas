@@ -31,7 +31,7 @@ const ContImgLogo = styled(motion.div)`
         top: 0;
         right: 0;
         position: fixed;
-        z-inded: 5;
+        z-index: 5;
         img
         {
             width: 100%;

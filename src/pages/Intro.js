@@ -30,12 +30,12 @@ const Intro = () =>
                         </TypeText>
                         <div className="Cont-Btns">
                         <Link to="/Principal/">
-                            <BotonWD Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
+                            <BotonWD FontSize="65px" Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55">
                                 SÍ
                             </BotonWD>
                         </Link>
                         <Link to="/Principal/">
-                            <BotonWD WidthPx="190px" HeightPx="104px" FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" EventHoverOut={changeToInitial} EventHover={changeTextButton}>
+                            <BotonWD FontSize="65px" WidthPx="190px" HeightPx="104px" FFont="Forgotten Futurist" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" EventHoverOut={changeToInitial} EventHover={changeTextButton}>
                                 {TextBtnWD === true ? "NO" :  <TypeText TypeTag="" TextOriginal="SÍ"><></></TypeText>}
                             </BotonWD>
                         </Link>

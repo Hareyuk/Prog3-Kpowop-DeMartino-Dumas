@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion' 
 const WidthPx = props=> props.WidthPx;
 const HeightPx = props=> props.HeightPx;
+const FontSize = props=> props.FontSize;
 const ContBtnWD = styled(motion.button)`
 width: ${WidthPx !== undefined ? WidthPx : 'unset'};
 height: ${HeightPx !== undefined ? HeightPx : 'unset'};
@@ -26,7 +27,7 @@ ${props=> props.primary ? '#aa1144' : 'darkmagent'}
     .btnWD-text
     {
         display: inline-block;
-        font-size: 65px;
+        font-size: ${FontSize};
         vertical-align: middle;
         font-family: Forgotten Futurist;
         font-weight: 700;

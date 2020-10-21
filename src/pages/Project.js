@@ -9,6 +9,7 @@ import LoginButton from "../components/LoginButton";
 import LogoutButton from "../components/LogoutButton";
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import {TitleH1} from '../components/TitleH1'; 
 
 const Project = () => 
 {    
@@ -34,7 +35,7 @@ const Project = () =>
             }
         }
         (query !== "") && fetchData();
-    },[]);
+    },[query]);
     
     return (
         <div className="App">
@@ -44,7 +45,7 @@ const Project = () =>
                         <NavBar/>
                             <LoginButton/>
                             <LogoutButton/>
-                            <h1 style={{color: 'white', margin: 0}} >Proyecto</h1>
+                            <TitleH1 Color="#35BDE4" FontS="70px" FontF="HackedFont" style={{color: 'white', margin: 0}} >Proyecto</TitleH1>
                             <SearchBar/>
                             <div className="divsInfo">
                                 {!loading ? resultsGames.length !== 0 ? resultsGames.map((obj)=>
