@@ -20,7 +20,6 @@ import Intro from '../../pages/Intro';
 import About from '../../pages/About';
 import Login from '../../pages/Login';
 import Project from '../../pages/Project';
-import SearchInfo from '../../pages/SearchInfo';
 import Home from '../../pages/Home';
 import Dashboard from '../../pages/Dashboard';
 import Componentes from '../../pages/Componentes';
@@ -44,9 +43,6 @@ function App() {
         </Route>
           <Route exact path="/Project/:query">
           <Project />
-        </Route>
-        <Route  exact path="/SearchInfo/">
-          <SearchInfo />
         </Route>
         <Route  exact path="/Dashboard/">
           <Dashboard />
