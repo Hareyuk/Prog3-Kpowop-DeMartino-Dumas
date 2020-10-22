@@ -9,7 +9,8 @@ import LoginButton from "../components/LoginButton";
 import LogoutButton from "../components/LogoutButton"
 import { Rombo } from '../components/Rombo';
 import { TitleH1 } from '../components/TitleH1';
-import {DivInfoDash} from '../components/DivInfoDash';
+import { DivInfoDash } from '../components/DivInfoDash';
+import { Link } from 'react-router-dom';
 
 const Componentes = () => {
     return (
@@ -20,17 +21,17 @@ const Componentes = () => {
                     <NavBar>
                     </NavBar>
 
-                    
+
                     <TitleH1 Color="#35BDE4" FontS="70px" FontF="HackedFont" style={{ color: 'white', margin: 0 }} >Componentes</TitleH1>
                     <div>
-                    <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
-                        Logo
+                        <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
+                            Logo
                         </TitleH2>
-                    <Logo263 />
+                        <Logo263 />
                     </div>
 
 
-                    <div style={{ padding: "4em"}}>
+                    <div style={{ padding: "4em" }}>
                         <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
                             Rombos
                         </TitleH2>
@@ -39,7 +40,7 @@ const Componentes = () => {
                         <Rombo Color="#E31075" ColorAdentro="#000000" Tamanio="50" />
                     </div>
 
-                    <div style={{ top: "4em"}}>
+                    <div style={{ top: "4em" }}>
                         <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
                             Boton
                         </TitleH2> <BotonWD FontSize="30px" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" style="width:100%">
@@ -48,19 +49,28 @@ const Componentes = () => {
 
                     <div className="Section-Subjects" style={{ top: 7 + "em" }}>
                         <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
-                            Cards
+                            Card Nosotros
                         </TitleH2>
                         <DivNosIndividual style={{ display: "inline-table" }} Subject="Sujeto #Componente" Name="Texto De Muestra" PictureInsta="../img/instagram_1.jpeg" />
+                        <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
+                            Card Dashboard
+                        </TitleH2>
                         <DivInfoDash style={{ display: "inline-table" }}>
-                            <h3>Super Smash Bros Ultimate</h3>
+                            <h3>Super Texto</h3>
                             <div className="Box-Texts">
-                                <h4>Género: Lucha 2D</h4>
-                                <h4>Creador: Mashihiro Sakurai</h4>
-                                <h4>Plataforma: Nintendo Switch</h4>
+                                <h4>Género: Segun Juego</h4>
+                                <h4>Creador: Segun Juego</h4>
+                                <h4>Plataforma: Segun Juego</h4>
                             </div>
                         </DivInfoDash>
                     </div>
-
+                    <div style={{ padding: "15em" }}>
+                        <Link to="404">
+                            <BotonWD FontSize="65px" Color="#E31075" ColorAdentro="#181E35" Tamanio="55">
+                                Enter the void
+                            </BotonWD>
+                        </Link>
+                    </div>
 
                 </div>
             </Layout>
