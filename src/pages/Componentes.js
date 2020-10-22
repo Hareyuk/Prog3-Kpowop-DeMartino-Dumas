@@ -65,6 +65,9 @@ const Componentes = () => {
                         </DivInfoDash>
                     </div>
                     <div style={{ padding: "15em" }}>
+                    <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
+                            Click the button to go nowhere
+                        </TitleH2>
                         <Link to="404">
                             <BotonWD FontSize="65px" Color="#E31075" ColorAdentro="#181E35" Tamanio="55">
                                 Enter the void
