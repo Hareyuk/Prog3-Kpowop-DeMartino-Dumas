@@ -40,7 +40,7 @@ const Componentes = () => {
                         <TitleH2 style={{ width: "50%" }} FontS="1em" FontF="Forgotten Futurist" Color="white">
                             Boton
                         </TitleH2>
-                        <BotonWD FontSize="30px" Color="#35BDE4" ColorAdentro="#181E35" Tamanio="55" style="width:100%">
+                        <BotonWD FontSize="30px" Color="#E31075" ColorAdentro="#181E35" Tamanio="55" style="width:100%">
                             Boton de ejemplo
                             </BotonWD></div>
 

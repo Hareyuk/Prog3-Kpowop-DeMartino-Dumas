@@ -22,6 +22,7 @@ ${props=> props.primary ? '#aa1144' : 'darkmagent'}
     :hover
     {
         opacity: 0.8;
+        box-shadow: 3px 3px 10px #aa1144;
     }
 
     .btnWD-text
