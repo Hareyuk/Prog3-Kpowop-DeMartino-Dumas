@@ -70,7 +70,7 @@ const Dashboard = () =>
                         <NavBar/>
                         <ContNintyWidth>
                             <LogoutButton/>
-                            <TitleH1 Color="#35BDE4" FontS="70px" FontF="HackedFont" style={{color: 'white', margin: '0', textAlign: 'left'}}>Dashboard</TitleH1>
+                            <TitleH1 Color="#E31075" FontS="70px" FontF="HackedFont" style={{color: 'white', margin: '0', textAlign: 'left'}}>Dashboard</TitleH1>
                             <Logo263 ToSide={true}></Logo263>
 
 
