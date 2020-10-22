@@ -9,6 +9,7 @@ import LogoutButton from "../components/LogoutButton"
 import axios from 'axios';
 import {TitleH1} from '../components/TitleH1';
 import ContNintyWidth from '../components/ContNintyWidth';
+import Project from './Project';
 
 const Dashboard = () => 
 {
@@ -75,8 +76,7 @@ const Dashboard = () =>
 
                             <div className="Dashb-Info1">
                             <DivInfoDash>
-                                <h3>Sujeto #0003</h3>
-                                <h4>Nombre: Utena Tenjou</h4>
+                                <Profile/>
                             </DivInfoDash>
 
                             {/* JUEGO 1 */}
