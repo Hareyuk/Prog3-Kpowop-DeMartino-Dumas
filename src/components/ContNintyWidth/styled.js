@@ -32,6 +32,7 @@ const StyledContNintyWidth = styled(motion.div)`
 
     .Dashb-Info1, .Dashb-Info2
     {
+        z-index: 20;
         width: 100%;
         margin: 0 auto;
         div
