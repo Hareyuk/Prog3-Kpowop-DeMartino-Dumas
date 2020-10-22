@@ -18,20 +18,42 @@ const ContInfoDash = styled(motion.div)`
         text-align: left;
     }
     
+    
+    
     .Box-Texts
     {
+        width: 45%;
         display: flex;
         flex-wrap: wrap;
 
         h4
         {
-            width: 50%;
+            width: 45%;
         }
+    }
+
+    .Box-Image
+    {
+        width: 45%;
+        text-align: center;
     }
 
     img
     {
         width: 50%;
+    }
+
+    .Box-Image img
+    {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 768px)
+    {
+        .Box-Image
+        {
+            width: 100%;
+        }
     }
     `;
 

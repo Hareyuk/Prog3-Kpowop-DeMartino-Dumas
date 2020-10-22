@@ -23,6 +23,24 @@ const StyledContNintyWidth = styled(motion.div)`
         left: 50%;
         transform: translate(-50%,-50%);
     }
+
+    h1
+    {
+        width: 100%;
+        text-align: left;
+    }
+
+    .Dashb-Info1, .Dashb-Info2
+    {
+        width: 100%;
+        margin: 0 auto;
+        div
+        {
+            width: 40%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
     `;
 
 export default StyledContNintyWidth;

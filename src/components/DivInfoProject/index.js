@@ -2,7 +2,6 @@ import React from 'react';
 import {ContInfoProj} from './styled';
 
 const DivInfoProject = ({ children, ...props }) => {
-    console.info(props);
     const {name, genres, platforms, rating, background_image} = props.DataGame;
     return (
         <ContInfoProj>
