@@ -113,7 +113,8 @@ const Dashboard = () =>
 
                             <div className="Dashb-Info2">
                             <DivInfoDash>
-                                <img src="/img/not_available.jpg" alt="No disponible"/>
+                                <h4>Una recomendacion musical de los creadores:</h4>
+                                <img src="/img/recomendacion.png" alt="Monster"/>
                             </DivInfoDash>
                             {/* JUEGO 2 */}
                             {!loading ? 
