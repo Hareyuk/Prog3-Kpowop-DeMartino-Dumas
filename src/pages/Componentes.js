@@ -11,6 +11,8 @@ import { Rombo } from '../components/Rombo';
 import { TitleH1 } from '../components/TitleH1';
 import { DivInfoDash } from '../components/DivInfoDash';
 import { Link } from 'react-router-dom';
+import {DivInfoProject} from '../components/DivInfoProject';
+import SearchBar from "../components/SearchBar";
 
 const Componentes = () => {
     return (
@@ -22,7 +24,7 @@ const Componentes = () => {
                     </NavBar>
 
 
-                    <TitleH1 Color="#35BDE4" FontS="70px" FontF="HackedFont" style={{ color: 'white', margin: 0 }} >Componentes</TitleH1>
+                    <TitleH1 Color="#35BDE4" FontS="70px" FontF="HackedFont" style={{ color: 'white'}} >Componentes</TitleH1>
                     <div>
                         <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
                             Logo
@@ -52,6 +54,8 @@ const Componentes = () => {
                             Card Nosotros
                         </TitleH2>
                         <DivNosIndividual style={{ display: "inline-table" }} Subject="Sujeto #Componente" Name="Texto De Muestra" PictureInsta="../img/instagram_1.jpeg" />
+                        </div>
+                        <div style={{ padding: "10em" }}>
                         <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
                             Card Dashboard
                         </TitleH2>
@@ -64,7 +68,16 @@ const Componentes = () => {
                             </div>
                         </DivInfoDash>
                     </div>
-                    <div style={{ padding: "15em" }}>
+                    <div style={{ top: "7em" }}>
+                    <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
+                            Search Bar
+                        </TitleH2>
+                        <SearchBar/>
+                    </div>
+                    <div style={{ padding: "10em" }}>
+                    <TitleH2 style={{ width: "50%" }} FontS="1.8em" FontF="Forgotten Futurist" Color="white">
+                            Click the button to go nowhere
+                        </TitleH2>
                         <Link to="404">
                             <BotonWD FontSize="65px" Color="#E31075" ColorAdentro="#181E35" Tamanio="55">
                                 Enter the void
