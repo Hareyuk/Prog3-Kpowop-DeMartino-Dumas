@@ -113,7 +113,7 @@ const Dashboard = () =>
 
                             <div className="Dashb-Info2">
                             <DivInfoDash>
-                                <img src="/img/instagram_1.jpeg" alt="QR Code"/>
+                                <img src="/img/not_available.jpg" alt="No disponible"/>
                             </DivInfoDash>
                             {/* JUEGO 2 */}
                             {!loading ? 
